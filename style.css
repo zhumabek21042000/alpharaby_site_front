@@ -90,8 +90,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    width: 100%;
     padding: 20px 80px;
-    background-color: #E3E6F3;
+    background-color: #c2c7c6;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
@@ -136,12 +138,13 @@ body {
 }
 
 #hero{
-    background: url('img/hero2.png') right no-repeat;
+    background: url('img/hero3.png') right no-repeat;
     height: 90vh;
     width: 100%;
+    /* width: 500px; */
     background-color: #f1f0f0;
-    /* background-size: cover; */
-    background-position: top 25% right 15%;
+    background-size: cover;
+    background-position: top 25% right 5%;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
@@ -342,22 +345,39 @@ body {
     flex-direction: column;
     justify-content:center;
     text-align: center;
-    background-image: url('img/smbanner.jpg');
+    background-image: url('img/banners/smbanner.jpg');
     align-items:flex-start;
     min-width: 580px;
+    max-width: 100%;
+    width:45%;
+    height: 50vh;
+    background-size:cover;
+    background-position:  center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    background-image: url('img/banners/smbanner2.jpg');
+    align-items:flex-start;
+    min-width: 580px;
+    max-width: 100%;
+    width:45%;
     height: 50vh;
     background-size:cover;
     background-position:  center;
     padding: 30px;
 }
 #sm-banner h4 {
-    color: #fff;
+    color: #222;
     font-size: 20px;
     font-weight: 300;
 }
 
 #sm-banner h2{
-    color: #fff;
+    color: #222;
     font-size: 28px;
     font-weight: 800;
 }
@@ -367,4 +387,13 @@ body {
     font-size: 14px;
     font-weight: 500;
     padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color:#088178;
+    border: 1px solid #088178;
+}
+#sm-banner .banner-box2:hover button{
+    background-color:#088178;
+    border: 1px solid #088178;
 }
